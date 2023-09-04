@@ -1,0 +1,6 @@
+mkdir qc
+for sample_name in VFUSI4dpi488-1 VFUSI4dpi488-2 VFUSI4dpi561-1 VFUSI4dpi561-2 VFUSI488-1 VFUSI488-2 VFUSI561-1 VFUSI561-2
+do
+    fastqc -o qc /home/test/share/Linux_analysis/00.CleanData/${sample_name}/${sample_name}_1.clean.fq.gz
+    fastqc -o qc /home/test/share/Linux_analysis/00.CleanData/${sample_name}/${sample_name}_2.clean.fq.gz
+done
