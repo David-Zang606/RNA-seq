@@ -6,7 +6,6 @@
 #SBATCH --error=%align_hisat2.err
 
 mkdir 1.alignment_hisat2
-
 for sample_name in VFUSI4dpi488-1 VFUSI4dpi488-2 VFUSI4dpi561-1 VFUSI4dpi561-2 VFUSI488-1 VFUSI488-2 VFUSI561-1 VFUSI561-2
 do
 	hisat2 -x /data/hisat2_mm10/mm10 \
